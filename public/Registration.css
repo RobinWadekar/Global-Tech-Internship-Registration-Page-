@@ -1,0 +1,105 @@
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/Pic.jpg");
+}
+.form{
+    margin: 0px auto;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #ffff;
+    width: 400px;
+}
+#submit{
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid white;
+    /* background-color: rgb(251, 181, 51); */
+    background-color: #3498db;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    /* font-weight: bold; */
+    text-align: center;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #027ac9;
+    /* background-color: rgb(213, 139, 0); */
+}
+.heading{
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px;
+    font-size:xx-large;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
+    justify-content: center;
+}
+#scroll{
+    background-color: ghostwhite;
+}
+.input{
+    width: 350px;
+    font-size: medium;
+    line-height: 30px;
+    border-radius: 5px;
+}
+input{
+    border: 1px solid white;
+}
+header, footer{
+    font-size: large;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    grid-column: span 5;
+}
+.img{
+    /* width: 20%; */
+    /* display: grid; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* grid-column: span 2; */
+    padding: 20px;
+    margin: 20px;
+}
+.everything{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar-brand Emoji {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+.navbar-brand Company {
+    margin-right: 05px; /* Adjust the margin as needed */
+}
+Company{
+    /* font-size: medium; */
+}
+.container-fluid>form{
+    margin-top: 10px;
+}
+header>nav{
+    border-radius: 10px;
+}

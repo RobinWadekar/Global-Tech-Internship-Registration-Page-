@@ -1,0 +1,61 @@
+<body contenteditable="false" spellcheck="false">
+    <%-include("../partials/header.ejs") %>
+    <div class="img">
+        <img src="./images/Pic-1.jpg" alt="side-image">
+    </div>
+    <div class="everything">
+        <form action="/submit" method="post">
+            <div class="form">
+                <br />
+                <label for="Name">Name : </label><br />
+                <input class="input" type="text" placeholder="Enter Your Full Name" name="Name"></input>
+                <br />
+                <br />
+                <label for="Email">Email : </label><br />
+                <input class="input" type="email" placeholder="Enter Your Email" name="Email"></input>
+                <br />
+                <br />
+                <label for="ContactNo">Contact No : </label><br />
+                <input class="input" type="number" placeholder="Enter Your Contact Number" name="ContactNo"></input>
+                <br />
+                <br />
+                <div id="gender">
+                    <label for="Gender">Gender : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="male" style="cursor: pointer;">
+                    &nbsp;
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="female" style="cursor: pointer;">
+                    &nbsp;
+                    <span id="female">Female</span>
+                </div>
+                <br />
+                <label for="ClgName">College Name : </label><br />
+                <input class="input" type="text" placeholder="Enter Your Full Name" name="ClgName"></input>
+                <br />
+                <br />
+                <label for="Course">Current Course <!-- (Eg :- B.E. in Computer Engg.) --> : </label><br />
+                <input class="input" type="text" placeholder="Enter Your Course Name" name="Course"></input>
+                <br />
+                <br />
+                <label for="Year">Current Course Year : </label><br />
+                <input class="input" type="number" placeholder="Enter Your Course Year" name="Year"></input>
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../index.js"></script>
+    <%-include("../partials/footer.ejs")%>
+</body>
