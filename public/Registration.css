@@ -103,3 +103,9 @@ Company{
 header>nav{
     border-radius: 10px;
 }
+contactExample, aboutExample{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 5;
+}

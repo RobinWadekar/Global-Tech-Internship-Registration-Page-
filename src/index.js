@@ -18,10 +18,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 //     // Set 'active' class for the current page link
 //     if (currentPage === '/') {
 //         document.getElementById('home-link').classList.add('active');
-//     } else if (currentPage === '/features') {
-//         document.getElementById('features-link').classList.add('active');
-//     } else if (currentPage === '/pricing') {
-//         document.getElementById('pricing-link').classList.add('active');
+//     } else if (currentPage === '/about') {
+//         document.getElementById('about-link').classList.add('active');
+//     } else if (currentPage === '/contact') {
+//         document.getElementById('contact-link').classList.add('active');
 //     }
 // });
 
@@ -51,6 +51,14 @@ app.get("/", (req, res)=>{
 app.post("/submit", (req, res)=>{
     // alert("Do you Want to Submit the Form?");
     res.render(__dirname+"/../public/Registration.ejs");
+});
+
+app.get("/about", (req, res) => {
+    res.render(__dirname+"/../public/About.ejs");
+});
+
+app.get("/contact", (req, res) => {
+    res.render(__dirname+"/../public/Contact.ejs");
 });
 
 app.listen(port, () => {
