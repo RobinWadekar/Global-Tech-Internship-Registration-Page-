@@ -53,7 +53,7 @@ app.post("/submit", (req, res)=>{
     res.render(__dirname+"/../public/Submit.ejs");
     
     setTimeout(function (){
-        res.render(__dirname+"/../public/Registration.ejs");
+        res.redirect("/");
     }, 5);
 });
 
