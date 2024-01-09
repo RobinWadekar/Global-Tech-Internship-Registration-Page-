@@ -50,7 +50,11 @@ app.get("/", (req, res)=>{
 
 app.post("/submit", (req, res)=>{
     // alert("Do you Want to Submit the Form?");
-    res.render(__dirname+"/../public/Registration.ejs");
+    res.render(__dirname+"/../public/Submit.ejs");
+    
+    setTimeout(function (){
+        res.render(__dirname+"/../public/Registration.ejs");
+    }, 5);
 });
 
 app.get("/about", (req, res) => {
